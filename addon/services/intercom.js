@@ -39,5 +39,13 @@ export default Service.extend({
 
   shutdown() {
     get(this, 'api')('shutdown');
+  },
+
+  update() {
+    if (arguments.length === 0) {
+      get(this, 'api')('update');
+    } else {
+      get(this, 'api')('update', arguments[0]);
+    }
   }
 });
