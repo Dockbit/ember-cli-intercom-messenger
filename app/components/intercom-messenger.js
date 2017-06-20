@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-intercom-messenger/components/intercom-messenger';
